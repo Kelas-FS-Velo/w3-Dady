@@ -176,7 +176,7 @@
 import { ref } from "vue";
 import { EyeIcon, EyeOffIcon, LoaderIcon } from "lucide-vue-next";
 import { useRouter } from "vue-router";
-import { AuthAPI } from "~/apis/Auth";
+import { AuthAPI } from "~/server/apis/Auth";
 import * as Yup from "yup";
 import { useForm, useField } from "vee-validate";
 

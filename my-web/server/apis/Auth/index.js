@@ -34,13 +34,13 @@ export const AuthAPI = {
     try {
       const response = await AxiosInstance.post("/register", {
         fullname: data.fullname,
-        email: data.email,
         password: data.password,
+        email: data.email,
         address: data.address,
         bod: data.bod,
         role: data.role || "user",
       });
-      return response;
+      return response.data;
     } catch (error) {
       console.error("Register error:", error);
       throw error;
